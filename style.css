@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #182A42;
+    color: white;
+    position: sticky;
+    padding: 0 2rem;
+    height: 8rem;
+}
+
+#logo {
+    font-family: "BBH Sans Bartle";
+    width: 0.3em;
+    text-shadow: 8px;
+}
+
+#menu-header {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+#menu-header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.estilo-menu {
+    background-color: rgb(135, 158, 222);
+    padding: 0.5em;
+    border-radius: 15px;
+}
