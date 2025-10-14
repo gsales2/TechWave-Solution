@@ -78,6 +78,27 @@ z-index: 10;
   background-repeat: no-repeat;
 }
 
+.hero-content p{
+  padding-bottom: 1rem; 
+}
+
+.btn-hero {
+  text-decoration: none;
+  background-color: #253f61;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+.btn-hero:hover {
+  background-color: aquamarine;
+  padding: 1rem;
+  color: black;
+  border: ;
+}
+
 footer {
   background-color: #182a42;
   color: white;
