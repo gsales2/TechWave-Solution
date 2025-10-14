@@ -2,18 +2,18 @@ html,body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #F5F7FA;
+  
 }
 
 header {
   display: flex;
-
   justify-content: center;
-  background-color: #182a42;
+  background-color: #182A42;
   color: white;
   position: sticky;
   padding: 0 23rem 0 0;
   height: 8rem;
-  
 }
 
 #submenu {
@@ -23,16 +23,26 @@ header {
   justify-content: center;
   position: sticky;
   top: 0;
-  box-shadow: 0px 6px 5px 3px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 6px 5px 3px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 6px 5px 3px rgba(0,0,0,0.75);
-z-index: 10;
+  box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.75);
+  z-index: 10;
 }
 
 #logo {
   font-family: "BBH Sans Bartle";
   width: 0.3em;
   text-shadow: 8px;
+  transition: all 0.3s ease;
+  cursor: default;
+  box-shadow: 20px;
+  text-shadow: 9px 7px 11px #000000;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+  color: #00AEEF;
+  text-shadow: 0 0 10px #00AEEF;
 }
 
 #menu-header {
@@ -48,18 +58,45 @@ z-index: 10;
 }
 
 .estilo-menu {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
   background-color: rgb(135, 158, 222);
   color: white;
   padding: 0.5em;
   border-radius: 15px;
-  transition: 0.3s;
   box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.estilo-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+  z-index: 0;
+  border-radius: 15px;
+}
+  
+.estilo-menu span {
+  position: relative;
+  z-index: 1;
+}
+
+.estilo-menu:hover::before {
+  transform: scale(1);
 }
 
 .estilo-menu:hover {
-  background-color: white;
   color: rgb(135, 158, 222);
 }
 
@@ -70,6 +107,7 @@ z-index: 10;
   align-items: center;
   text-align: center;
   color: white;
+  font-family: "roboto", sans-serif;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://images.unsplash.com/photo-1498050108023-c5249f4df085);
@@ -78,35 +116,83 @@ z-index: 10;
   background-repeat: no-repeat;
 }
 
-.hero-content p{
-  padding-bottom: 1rem; 
+.hero-content p {
+  padding-bottom: 1rem;
 }
 
 .btn-hero {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
   text-decoration: none;
   background-color: #253f61;
   color: white;
   font-weight: bold;
   padding: 0.8rem;
   border-radius: 2rem;
-  transition: 0.3s;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(135, 158, 222);
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+  z-index: 0;
+  border-radius: 15px;
+}
+
+.btn-hero span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-hero:hover::before {
+  transform: scale(1);
 }
 
 .btn-hero:hover {
-  background-color: aquamarine;
-  padding: 1rem;
-  color: black;
-  border: ;
+  color: #253f61;
+}
+
+.sobre-conteudo {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sobre-texto {
+  background-color: rgba(161, 156, 156, 0.377);
+  flex: 1;
+  border-radius: 20px;
+  padding: 2rem;
+  font-family: "roboto", sans-serif;
+  font-size: 1.3rem;
+  
+}
+
+#foto-equipe {
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 footer {
   background-color: #182a42;
   color: white;
-  box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
-padding: 0 2rem;
-
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 2rem;
 }
 
 footer h1 {
@@ -117,13 +203,13 @@ footer h1 {
   font-family: "BBH Sans Bartle", sans-serif;
 }
 
-footer h3{
+footer h3 {
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
 }
 
-footer p{
+footer p {
   display: flex;
   justify-content: center;
   color: rgba(255, 255, 255, 0.548);
@@ -131,7 +217,7 @@ footer p{
 
 .menu-footer {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .menu-footer img {
@@ -141,6 +227,5 @@ footer p{
 }
 
 .menu-footer img:hover {
-  width: 3.5rem;
+  transform: scale(1.1);
 }
-
