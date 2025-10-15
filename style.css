@@ -382,6 +382,7 @@ header {
 #servicos {
   padding: 4rem 1rem;
   background: #c9ccd3;
+  font-family: "roboto", sans-serif;
 }
 
 .titulo-servico {
@@ -440,7 +441,7 @@ header {
 
 #time {
   padding: 4rem 1rem;
-   background: linear-gradient(180deg, #c9ccd3, #e4e7ec);
+  background: linear-gradient(180deg, #c9ccd3, #e4e7ec);
   transition: background 0.5s ease;
   border-radius: 20px;
   font-family: "roboto", sans-serif;
@@ -509,8 +510,17 @@ header {
 }
 
 .card-time h2 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
   text-shadow: 5px 7px 5px  rgba(0,0,0,0.6);
   font-weight: 800;
+}
+
+.card-time h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #87cefa;
+  margin-bottom: 0.5rem;
 }
 
 .card-time::before {
@@ -539,6 +549,12 @@ header {
   object-position: center top;
   position: relative;
   z-index: 1;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-time:hover .foto-time {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.4);
 }
 
 .social-icons {
