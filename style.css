@@ -439,19 +439,36 @@ header {
 /* Seção Time */
 
 #time {
-
+  padding: 4rem 1rem;
 }
 
 .container-time {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 3rem 0 1rem 0;
 }
 
 .card-time {
+  background: linear-gradient(to bottom, rgba(37, 63, 97, 0.9), rgba(24, 42, 66, 0.9));
+  border: 15px;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   
+}
+
+.foto-time {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 /* Rodapé */
