@@ -549,7 +549,7 @@ header {
   object-position: center top;
   position: relative;
   z-index: 1;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .card-time:hover .foto-time {
@@ -589,6 +589,74 @@ header {
   font-size: 2rem;
   position: relative;
   margin-bottom: 1.5rem;
+}
+
+.titulo-depoimentos::before {
+  content: "💬";
+  position:absolute;
+  left: 50%;
+  transform: translate(-350%, -1%);
+  top: 2px;
+}
+
+.titulo-depoimentos::after {
+  content: "";
+  display: block;
+  width:80px;
+  height: 3px;
+  background: linear-gradient(90deg, #253f61, #1e90ff);
+  margin: 0.5rem auto 0;
+  border-radius:2px;
+}
+
+.intro-depoimentos {
+  font: size 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.container-depoimentos {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+blockquote {
+  background: rgba(255, 255, 255, 0.5);
+  border-left: 4px solid #1e90ff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.blockquote::before {
+  content: "";
+  font-size: 3rem;
+  color: #1e90ff;
+  position: absolute;
+  left: 15px;
+  top: -10px;
+  opacity: 0.2;
+}
+
+blockquote:hover {
+  transform: translateY(-3px);
+}
+
+blockquote p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+blockquote cite {
+  font-style: normal;
+  font-weight: 600;
+  color: #1e90ff;
 }
 
 /* Rodapé */
