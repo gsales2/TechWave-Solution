@@ -1,10 +1,14 @@
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #f5f7fa;
+  background-color: #d2d2d3;
   color: white;
+  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 header {
@@ -13,30 +17,32 @@ header {
   background-color: #182a42;
   color: white;
   position: sticky;
-  padding: 0 23rem 0 0;
+  padding: 0 2rem;
   height: 8rem;
+  z-index: 20;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 #submenu {
-  display: flex;
-  background-color: #253f61;
-  padding: 1em;
-  justify-content: center;
-  position: sticky;
+   position: sticky;
   top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #253f61;
+  padding: 1rem 0;
+  z-index: 999;
   box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.75);
-  z-index: 10;
 }
 
 #logo {
   font-family: "BBH Sans Bartle";
-  width: 0.3em;
-  text-shadow: 8px;
+  font-size: 2.5rem;
+  text-align: center;
   transition: all 0.3s ease;
   cursor: default;
-  box-shadow: 20px;
   text-shadow: 9px 7px 11px #000000;
 }
 
@@ -48,7 +54,9 @@ header {
 
 #menu-header {
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  flex-wrap: wrap;
+  transition: 0.3s;
 }
 
 #menu-header a {
@@ -64,13 +72,13 @@ header {
   overflow: hidden;
   background-color: rgb(135, 158, 222);
   color: white;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 15px;
   box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.75);
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .estilo-menu::before {
@@ -181,7 +189,7 @@ header {
   margin: 1rem;
   border-radius: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: hidden;
+  
 }
 
 .foto-destaque::before {
