@@ -433,13 +433,51 @@ header {
 
 .card-servico:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Seção Time */
 
 #time {
   padding: 4rem 1rem;
+   background: linear-gradient(180deg, #c9ccd3, #e4e7ec);
+  transition: background 0.5s ease;
+  border-radius: 20px;
+  font-family: "roboto", sans-serif;
+}
+
+.titulo-time {
+  font-size: 2rem;
+  text-align: center;
+  color: #253f61;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.titulo-time::before {
+  content: "💻";
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -15%);
+  position: absolute;
+  top: 2px;
+}
+
+.titulo-time::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #253f61, #1e90ff);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.intro-time {
+  text-align: center;
+  color: #253f61;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
 }
 
 .container-time {
@@ -452,15 +490,44 @@ header {
 
 .card-time {
   background: linear-gradient(to bottom, rgba(37, 63, 97, 0.9), rgba(24, 42, 66, 0.9));
-  border: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
   padding: 2rem;
   border-radius: 20px;
   width: 250px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "roboto", sans-serif;
+}
 
-  
+.card-time p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+
+}
+
+.card-time h2 {
+  text-shadow: 5px 7px 5px  rgba(0,0,0,0.6);
+  font-weight: 800;
+}
+
+.card-time::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.card-time:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
 }
 
 .foto-time {
@@ -469,6 +536,25 @@ header {
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
+  position: relative;
+  z-index: 1;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #1e90ff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
 }
 
 /* Rodapé */
