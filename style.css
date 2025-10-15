@@ -574,6 +574,23 @@ header {
   color: #ffffff;
 }
 
+/* Seção Depoimentos */
+
+#depoimentos {
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #e4e7ec, #c9ccd3);
+  border-radius: 20px;
+  text-align: center;
+  color: #253f61;
+  font-family: "roboto", sans-serif;
+}
+
+.titulo-depoimentos {
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
 /* Rodapé */
 
 footer {
