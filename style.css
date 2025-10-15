@@ -310,6 +310,7 @@ header {
   font-family: "Roboto", sans-serif;
   color: #f5f7fa;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
 }
 
 .valores:hover {
@@ -364,6 +365,8 @@ header {
 .valores li b {
   color: #f5f7fa;
 }
+
+
 
 footer {
   background: linear-gradient(to top, #182a42, #253f61);
