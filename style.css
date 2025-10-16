@@ -663,8 +663,8 @@ blockquote cite {
 
 .contato {
   padding: 80px 10%;
-  background-color: #f9f9f9;
-  color: #222;
+  background-color: #e3e9f0;
+  color: #1f1f1f;
   font-family: "roboto", sans-serif;
 }
 
@@ -678,8 +678,16 @@ blockquote cite {
 
 .info-contato {
   display: flex;
+  padding-top: 0;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-end;
+}
+
+.itens-contato {
+  text-align: left;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .formulario,
@@ -693,7 +701,7 @@ blockquote cite {
   font-family: "roboto", sans-serif;
   font-size: 2rem;
   color: #1f1f1f;
-  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .formulario input,
@@ -705,6 +713,7 @@ blockquote cite {
   background-color: #fff;
   font-size: 1rem;
   transition: border-color 0.3s;
+  margin: 0.5rem 0;
 }
 
 .formulario input:focus,
@@ -722,6 +731,7 @@ blockquote cite {
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
+  
 }
 
 .formulario button:hover {
@@ -735,7 +745,10 @@ blockquote cite {
 }
 
 .redes-sociais {
+  display: flex;
   margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .redes-sociais a {
@@ -747,10 +760,18 @@ blockquote cite {
   transition: 0.3s;
 }
 
-.redes-sociais a:hover {
-  color: #1e4e85;
-  text-decoration: underline;
-} 
+.redes-sociais a img{
+  width: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+  filter:saturate(100%) invert(37%) sepia(20%) saturate(2006%) hue-rotate(172deg) brightness(97%) contrast(89%);
+
+}
+
+.redes-sociais a img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px rgba(0, 0, 0, 0.4);
+}
 
 /* Rodapé */
 
