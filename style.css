@@ -6,9 +6,9 @@ body {
   height: 100%;
   background-color: #d2d2d3;
   color: white;
-  overflow: scroll;
-  overflow-y: auto;
+  overflow: scroll; 
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Header */
@@ -788,4 +788,86 @@ footer {
   border: none;
   height: 1px;
   background-color: rgba(255,255,255,0.2);
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    .sobre-conteudo,
+    .container-servicos,
+    .valores,
+    .container-contato,
+    .container-time {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-servico {
+        width: 45%;
+    }
+
+    .sobre-imagem img {
+        max-width: 80%;
+        margin-top: 1rem;
+    }
+
+    .valores div {
+        max-width: 400px;
+    }
+}
+
+/* Celulares grandes (até 768px) */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .submenu,
+    nav {
+      position: static !important;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+    }
+
+    .card-servico,
+    .valores div,
+    form {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .sobre-imagem img {
+        display: none; /* remove imagem decorativa se ocupar espaço demais */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
 }
