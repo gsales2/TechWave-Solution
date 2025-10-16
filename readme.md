@@ -1,103 +1,59 @@
-# 🌐 TechWave Solutions – Site Institucional
+# TechWave Solutions
 
-## Descrição
-Site institucional fictício para uma empresa de tecnologia chamada **TechWave Solutions**.  
-O objetivo é criar uma página **profissional, moderna e responsiva**, mostrando serviços, equipe e formas de contato.
-
----
-
-## Estrutura do Site
-
-### 1. Cabeçalho (Header)
-- Logo da empresa: “TechWave Solutions”  
-- Menu: Início | Sobre | Serviços | Equipe | Contato  
-- Menu fixo no topo (sticky)  
-- Fundo azul-escuro `#182A42`, texto branco
+Este é um site institucional fictício que desenvolvi para praticar HTML e CSS.  
+A ideia foi simular uma empresa de tecnologia moderna e usar o projeto como uma forma de aplicar o que aprendi sobre estrutura, responsividade e design limpo.
 
 ---
 
-### 2. Hero (Seção Principal)
-- Imagem de fundo com overlay (`linear-gradient`)  
-- Título: “Transformando ideias em soluções digitais”  
-- Subtítulo: “Desenvolvemos sistemas modernos e personalizados para o seu negócio.”  
-- Botão: “Fale conosco” (link para a seção de contato)
+## Contexto
+
+Esse foi meu primeiro projeto mais completo.  
+Quis criar algo que parecesse profissional, mesmo sendo feito apenas com HTML e CSS, sem frameworks.  
+Durante o processo, trabalhei na organização das seções, no layout responsivo e em deixar tudo funcional em diferentes tamanhos de tela.
 
 ---
 
-### 3. Sobre
-- Título: “Quem somos”  
-- Texto sobre missão e valores da empresa  
-- Imagem ao lado do texto (use `flex` ou `grid`)
+## Principais aprendizados
+
+- Criação de um layout institucional do zero;
+- Uso de media queries para adaptar o site a dispositivos diferentes;
+- Organização do código e das pastas do projeto;
+- Aplicação de boas práticas de espaçamento, hierarquia e contraste;
+- Cuidados com o visual e harmonia entre cores e fontes.
 
 ---
 
-### 4. Serviços
-- Título: “Nossos Serviços”  
-- 3 a 4 cards, cada um com:
-  - Ícone ou emoji  
-  - Título  
-  - Descrição breve  
-- Exemplo: Desenvolvimento Web, Soluções em Nuvem, Segurança Digital, Consultoria em TI
+## Estrutura do projeto
 
----
-
-### 5. Equipe
-- Título: “Nosso Time”  
-- 3 a 4 cards com:
-  - Foto (ou avatar) redonda  
-  - Nome  
-  - Cargo  
-
----
-
-### 6. Depoimentos (Opcional)
-- Título: “O que nossos clientes dizem”  
-- 2 a 3 comentários curtos com nome da pessoa  
-
----
-
-### 7. Contato
-- Título: “Entre em Contato”  
-- Formulário simples:
-  - Nome  
-  - Email  
-  - Mensagem  
-  - Botão “Enviar mensagem”  
-- Ao lado (ou abaixo): endereço, telefone e redes sociais  
-
----
-
-### 8. Rodapé (Footer)
-- Texto: “© 2025 TechWave Solutions - Todos os direitos reservados.”  
-- Fundo azul-escuro `#182A42`, texto branco, centralizado
-
----
-
-## Cores e Estilo
-- Fundo principal: `#F5F7FA`  
-- Azul-escuro (menu e footer): `#182A42`  
-- Azul-claro (destaques): `#3B82F6`  
-- Texto principal: `#333333`  
-- Texto secundário: `#555555`  
-- Fontes sugeridas: Poppins, Inter ou Roboto  
-
----
-
-## Responsividade
-- Use media queries para telas pequenas:
-  - Empilhar colunas (Serviços, Equipe)  
-  - Ajustar fontes e padding  
-  - Menu pode virar botão hambúrguer (visual)
-
----
-
-## Estrutura de Pastas
-```
-responsive-event-form/
+techwave/
 │
 ├── index.html
 ├── style.css
+├── README.md
 └── assets/
     ├── img/
     └── icons/
-```
+
+---
+
+## Tecnologias utilizadas
+
+- HTML5  
+- CSS3  
+- Google Fonts  
+- Imagens otimizadas (WebP)  
+- Favicon personalizado
+
+---
+
+## Como visualizar
+
+Basta abrir o arquivo `index.html` em qualquer navegador.  
+O site foi desenvolvido de forma responsiva, então funciona bem em telas grandes e pequenas.
+
+---
+
+## Autor
+
+Projeto desenvolvido por **Gabriel Sales**.  
+Criado com o objetivo de aprendizado e portfólio pessoal.
