@@ -262,51 +262,6 @@ header {
   text-shadow: 1px 1px 5px rgba(0,0,0,1);
 }
 
-/* Seção Missão */
-
-.missao {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: linear-gradient(to bottom, rgba(37,63,97,0.9), rgba(24,42,66,0.9));
-  border-radius: 20px;
-  margin: 0 1rem;
-  margin-top: 0.4rem;
-  font-family: "roboto", sans-serif;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.missao:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
-}
-
-.missao p {
-  font-size: 1.5rem;
-  padding: 0 1rem;
-  margin-top: 0;
-}
-
-.missao h4 {
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-  position: relative;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
-  font-size: 1.7rem;
-}
-
-.missao h4::before {
-  content: "🎯";
-  top: 50%;
-  left: 50%;
-  transform: translate(-365%, -10%);
-  position: absolute;
-  top: 2px;
-}
-
 /* Seção Valores */
 
 .valores {
