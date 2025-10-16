@@ -1,4 +1,8 @@
+![Prévia do site TechWave](assets/img/banner.png)
+
 # TechWave Solutions
+
+[Ver site ao vivo](https://gsales2.github.io/TechWave-Solution/)
 
 Este é um site institucional fictício que desenvolvi para praticar HTML e CSS.  
 A ideia foi simular uma empresa de tecnologia moderna e usar o projeto como uma forma de aplicar o que aprendi sobre estrutura, responsividade e design limpo.
