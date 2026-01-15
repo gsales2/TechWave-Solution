@@ -156,8 +156,7 @@ nav.scrolled {
     display: flex;
     align-items: center;
     position: relative;
-    background: url('assets/img/hero-bg.jpg') no-repeat center center/cover;
-    background: radial-gradient(circle at top right, #1e293b, #0f172a); 
+    background: url('assets/img/hero-bg.png') no-repeat center center/cover;
 }
 
 .hero-overlay {
@@ -300,7 +299,13 @@ nav.scrolled {
     padding: 3px;
 }
 
-.foto-wrapper img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.foto-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit:
+  cover;
+  border-radius: 50%;
+}
 
 .card-membro h3 { font-size: 1.2rem; margin-bottom: 5px; }
 .card-membro span { color: var(--primary-color); font-size: 0.9rem; font-weight: 500; display: block; margin-bottom: 15px; }
@@ -409,7 +414,7 @@ footer {
 }
 
 .footer-logo h3 { font-size: 1.5rem; }
-.footer-links a { margin-left: 20px; color: var(--text-gray); }
+.footer-links a { margin-left: 5px; color: var(--text-gray); }
 .footer-links a:hover { color: var(--primary-color); }
 
 .copyright { width: 100%; text-align: center; margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; font-size: 0.9rem; color: #64748b; }
