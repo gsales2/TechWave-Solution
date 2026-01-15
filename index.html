@@ -226,31 +226,50 @@
             </div>
         </section>
 
-        <section id="contato" class="contato">
-            <div class="container-contato">
-                <div class="formulario">
-                    <form>
-                        <input type="text" placeholder="Seu nome" required>
-                        <input type="email" placeholder="Seu e-mail" required>
-                        <textarea placeholder="Sua Mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div class="info-contato">
-                    <div class="itens-contato">
-                        <h2>Fale Conosco</h2>
-                        <p>📞 (11) 99999-9999</p>
-                        <p>✉️ contato@seudominio.com</p>
-                        <p>📍 Rua Exemplo, 123 - São Paulo/SP</p>
-                        <div class="redes-sociais">
-                            <a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a>
-                            <a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a>
-                            <a href="#"><img src="assets/icons/linkedin.png" alt="Linkedin"></a>
-                            <a href="#"><img src="assets/icons/whatsapp.png" alt="WhatsApp"></a>
-                        </div>
+        <section id="contato" class="section-padding">
+            <div class="container contato-wrapper">
+                <div class="contato-info">
+                    <h4 class="subtitulo">Contato</h4>
+                    <h2>Vamos começar um projeto?</h2>
+                    <p>Preencha o formulário ou nos chame nas redes sociais.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(11) 99999-9999</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@techwave.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Av. Paulista, 123 - SP</span>
+                    </div>
+
+                    <div class="social-big">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
 
+                <div class="contato-form">
+                    <form>
+                        <div class="input-group">
+                            <label for="nome" class="sr-only">Nome</label>
+                            <input type="text" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="sr-only">E-mail</label>
+                            <input type="email" id="email" placeholder="Seu e-mail profissional" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="mensagem" class="sr-only">Mensagem</label>
+                            <textarea id="mensagem" placeholder="Como podemos te ajudar?" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Enviar Mensagem</button>
+                    </form>
+                </div>
             </div>
         </section>
 
