@@ -30,48 +30,74 @@
 <body>
 
     <header>
-        <h1 id="logo">TechWave<br>Solutions</h1>
+        <nav id="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">TechWave<span>.</span></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li <a href="#inicio"></a></li>
+                    <li <a href="#sobre"></a></li>
+                    <li <a href="#servicos"></a></li>
+                    <li <a href="#time"></a></li>
+                    <li <a href="#contato"></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav id="submenu">
-        <div id="menu-header">
-            <a href="#logo" class="estilo-menu"><span>Inicio</span></a>
-            <a href="#sobre" class="estilo-menu"><span>Sobre</span></a>
-            <a href="#servicos" class="estilo-menu"><span>Serviços</span></a>
-            <a href="#time" class="estilo-menu"><span>Equipe</span></a>
-            <a href="#contato" class="estilo-menu"><span>Contato</span></a>
-        </div>
-    </nav>
-
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Transformando ideias em soluções digitais</h1>
-                <p>Desenvolvemos sistemas modernos e personalizados para o seu negócio</p>
-                <a href="#contato" class="btn-hero"><span>Fale Conosco</span></a>
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="badge-hero">Inovação & Tecnologia</span>
+                <h1>Transformando ideias em <span class="gradient-text">soluções digitais</span></h1>
+                <p>Desenvolvemos sistemas modernos, escaláveis e personalizados para elevar o seu negócio ao próximo nível</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn-primary">Fale Conosco <i class="fas fa-arrow-right"></i></a>
+                    <a href="#servicos" class="btn-secondary">Nossos Serviços</a>
+                </div>
             </div>
-
         </section>
-        <section id="sobre">
-            <div class="sobre-conteudo">
-                <div class="sobre-texto">
-                    <h1>Quem Somos</h1>
-                    <p>Na TechWave Solutions, acreditamos que tecnologia é mais do que código, é uma ponte entre
-                        pessoas,
-                        ideias e resultados.
-                        Somos uma equipe apaixonada por inovação e comprometida em transformar desafios em soluções
-                        digitais
-                        inteligentes.
-                        <br>
-                        Com foco em qualidade, eficiência e design moderno, desenvolvemos sistemas personalizados que se
-                        adaptam
-                        às necessidades de cada cliente.
-                        Nosso objetivo é simplificar o complexo e entregar tecnologia que realmente faz diferença no dia
-                        a
-                        dia
-                        das empresas.
 
-                    </p>
+        <section id="sobre" class="section-padding">
+            <div class="container sobre-grid">
+                <div class="sobre-texto">
+                    <h4 class="subtitulo">Quem Somos</h4>
+                    <h2>Mais do que código, criamos conexões.</h2>
+                    <p>Na TechWave Solutions, acreditamos que tecnologia é uma ponte entre pessoas e resultados. Somos apaixonados por inovação e obcecados por qualidade.</p>
+
+                    <div class="valores-grid">
+                        <div class="valor-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <strong>Inovação</strong>
+                                <p>Novas ideias sempre.</p>
+                            </div>
+                        </div>
+                        <div class="valor-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <strong>Performance</strong>
+                                <p>Foco em resultados.</p>
+                            </div>
+                        </div>
+                        <div class="valor-item">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <strong>Parceria</strong>
+                                <p>Crescemos juntos.</p>
+                            </div>
+                        </div>
+                        <div class="valor-item">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <strong>Ética</strong>
+                                <p>Impacto positivo.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="foto-destaque">
                     <img id="foto-equipe" src="assets/img/equipe.webp" alt="equipe trabalhando com laptops">
