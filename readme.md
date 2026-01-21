@@ -1,4 +1,4 @@
-![Prévia do site TechWave](assets/img/banner.png)
+![Prévia do site TechWave](assets/img/banner-readme.png)
 
 # TechWave Solutions
 
